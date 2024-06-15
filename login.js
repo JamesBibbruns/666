@@ -15,7 +15,9 @@ document.addEventListener('DOMContentLoaded', function() {
 function getUsername() {
     const username = getCookie('username');
     if (username !== '') {
-        document.getElementById('usernameDisplay').textContent = `Current Username: ${username}`;
+        document.getElementById('usernameDisplay').textContent = `Username: ${username}`;
+    } else {
+        console('Username cookie not found.');
     }
 }
 
