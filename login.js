@@ -16,8 +16,6 @@ function getUsername() {
     const username = getCookie('username');
     if (username !== '') {
         document.getElementById('usernameDisplay').textContent = `Current Username: ${username}`;
-    } else {
-        alert('Username cookie not found.');
     }
 }
 
