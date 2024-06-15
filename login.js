@@ -17,7 +17,7 @@ function getUsername() {
     if (username !== '') {
         document.getElementById('usernameDisplay').textContent = `Username: ${username}`;
     } else {
-        console('Username cookie not found.');
+        document.getElementById('someElementId').textContent =' You are not Login' ;
     }
 }
 
